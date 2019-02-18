@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <style type="text/css" media="screen">
+      @import 'adivinarnumero.css';
+    </style>
+
+    <title>Juego de adivinar un número</title>
+
+  </head>
+
+  <body>
+    <h1>Juego de adivinar un número</h1>
+
+    <p>Se generará un número aleatorio entre 1 y 100. Intenta adivinar
+      el número en 10 intentos. Se indicará si tu número es mayor o menor
+      al generado.
+    </p>
+
+    <div class="form">
+      <label for="guessField">Introduce un número</label>
+      <input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Comparar número" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+    <script type="text/x-ecmascript" src="adivinarnumero.js">></script>
+    </body>
+</html>
